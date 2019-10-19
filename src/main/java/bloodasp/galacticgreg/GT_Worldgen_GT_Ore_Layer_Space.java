@@ -169,6 +169,7 @@ public class GT_Worldgen_GT_Ore_Layer_Space extends GT_Worldgen {
 
 		if (pIgnoreWeight)
 		{
+		    pRandom = new Random(pRandom.nextInt());
 			List<String> tEnabledVeins = getOreMixIDsForDim(pDimensionDef);
 			int tRnd = pRandom.nextInt(tEnabledVeins.size());
 			String tVeinName = tEnabledVeins.get(tRnd);
